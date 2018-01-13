@@ -14,12 +14,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void onButtonClick(View v) {
-        EditText e1 =(EditText)findViewById(R.id.num1);
-        EditText e2 =(EditText)findViewById(R.id.num2);
+        EditText e1 =(EditText)findViewById(R.id.input);
         TextView t1 = (TextView)findViewById(R.id.result);
-        int num1 = Integer.parseInt(e1.getText().toString());
-        int num2 = Integer.parseInt(e2.getText().toString());
-        int sum = num1 + num2;
-        t1 .setText(Integer.toString(sum));
+        String input = e1.getText().toString();
+        String output = "Your input is " + input;
+        t1.setText(output);
     }
 }
