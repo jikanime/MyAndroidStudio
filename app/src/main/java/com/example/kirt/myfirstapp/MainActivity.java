@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         EditText e1 =(EditText)findViewById(R.id.input);
         TextView t1 = (TextView)findViewById(R.id.result);
         String input = e1.getText().toString();
-        String output = "Your input is " + input;
-        t1.setText(output);
+        t1.setText(input);
     }
 }
